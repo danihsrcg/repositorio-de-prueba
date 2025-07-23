@@ -193,13 +193,23 @@ footer{
     .layout-grid{
         grid-template-columns: 1fr;
         grid-template-areas: 
-        "header"
+        "Header"
         "sidebar"
-        "content_1"
-        "content_2"
-        "content_3"
+        "Portfolio"
         "footer";
+    grid-template-rows: repeat(4, auto) ;    
+    
+    .Portfolio {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+        "Item1"
+        "Item2"
+        "Item3"
+        "Item4"
+        "Item5";
+    padding-bottom: 80px;
+
     }
-}
+}}
 
         
