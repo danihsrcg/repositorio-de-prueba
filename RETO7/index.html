@@ -9,11 +9,11 @@
 </head>
 <body>
 
-    <header>
+    <header class="header">
         <h1>Encuesta Sobre Consumo Energetico</h1>
     </header>
 
-    <main>
+    <main class="form-container">
         <form action=""method="POST">
             <!-- GRUPO INFORMACION PERSONAL  -->
 
@@ -65,16 +65,28 @@
              <!-- GRUPO INTERES EN ENERGIAS RENOVABLES -->
 
              <FIeldset>
-                <legend>Interes en Energias Renovables</legend>
-                
+                <legend>Interés en Energias Renovables</legend>
+                <label for="interest_level">Nivel de interes en energias Renovables</label>
+                <select name="interest_level" id="interest_level"required>
+                    <option value="">Seleccione una opcion</option>
+                    <option value="alto">Alto</option>
+                    <option value="medio">Medio</option>
+                    <option value="bajo">Bajo</option>                    
+                </select>
+                <label for="adoption_interest">Disposicion a Adopotar Energias Renovables</label>
+                <input type="radio" id="yes" name="adoption_interest" value="si" required>Si
+                <input type="radio" id="no" name="adoption_interest" value="no">No      
 
              </FIeldset>
 
+             <button type="submit">Enviar Encuesta</button>
+
+             
         </form>
     </main>
 
-    <footer>
-
+    <footer class="footer">
+        <p>Gracias por ayudarnos a entender el consumo energetico y apoyar la transicion hacia energias Renovables</p>
     </footer>
 
     
