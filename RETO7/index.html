@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>Encuesta sobre consumo Energetico</title>
+    
+</head>
+<body>
+
+    <header>
+        <h1>Encuesta Sobre Consumo Energetico</h1>
+    </header>
+
+    <main>
+        <form action=""method="POST">
+            <!-- GRUPO INFORMACION PERSONAL  -->
+
+             <fieldset>
+                <legend>
+                    Informacion personal
+                </legend>
+
+                <label for="name">Nombre Completo:</label>
+                <input type="text" id="name" name="name" required placeholder="Ingrese su nombre completo">
+
+             
+                <label for="email">Correo electronico:</label>
+                <input type="email" id="email" name="email" required placeholder="Ingrese su correo electronico">
+
+                <label for="location">Ubicacion (Ciudad/Pais):</label>
+                <input type="text" id="location" name="location" required placeholder="Ingrese su Ubicacion">
+
+             </fieldset>
+
+             <!-- GRUPO CONSUMO ENERGETICO ACTUAL -->
+
+             <fieldset>
+                <legend>
+                    Consumo Energetico Actual
+                </legend>
+
+                <label for="energy_source">Fuentes de Energia Utilizadas:</label>
+                <select name="energy_source" id="energy_source" required>
+                    <option value="">Seleccione una Opcion:</option>
+                    <option value="electricidad">Electricidad</option>
+                    <option value="gas">Gas Natural</option>
+                    <option value="Solar">Energia Solar</option>
+                    <option value="eolica">Energia Eólica</option>
+                    <option value="otra">Otra</option>
+                </select>
+
+                <label for="monthly_consumption">Consumo Energetico Mensual (kWh)</label>
+                <input type="number"
+                        id="monthly_consumption"
+                        name="monthly_consumption"
+                        min="100"
+                        placeholder="Ingrese su consumo Actual"
+                        required
+                        title="El consumo promedio en un hogar Colombiano es de 157 kWh">
+
+             </fieldset>
+
+             <!-- GRUPO INTERES EN ENERGIAS RENOVABLES -->
+
+             <FIeldset>
+                <legend>Interes en Energias Renovables</legend>
+                
+
+             </FIeldset>
+
+        </form>
+    </main>
+
+    <footer>
+
+    </footer>
+
+    
+</body>
+</html>
